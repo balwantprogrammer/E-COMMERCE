@@ -35,6 +35,7 @@
     width: 105px;
 }
 .hero-latest-btn{
+    cursor: pointer;
     height: 70px;
     width: 310px;
     display: flex;

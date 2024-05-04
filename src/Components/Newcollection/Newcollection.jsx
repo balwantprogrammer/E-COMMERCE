@@ -5,9 +5,9 @@ import Item from '../Item/Item';
 const Newcollection = () => {
   return (
     <div className='new-collection'>
-    <h2>NEW COLLECTION</h2>
+    <h2 id='new-collection'>NEW COLLECTION</h2>
     <hr/>
-    <div className='collection'>
+    <div className='collection' >
        {
         new_collection.map((item,i)=>{
             return(

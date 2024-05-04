@@ -16,6 +16,7 @@ import axios from 'axios';
 import Profile from './Components/Profile/Profile';
 
 
+
 const App = () => {
 
   const [showLogin , setShowLogin] = useState(false);
@@ -49,6 +50,7 @@ const App = () => {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/order' element={<PlaceOrder/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        
       </Routes>
       <Footer/>
     </div>

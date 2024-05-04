@@ -28,7 +28,7 @@ const Navbar = ({setShowLogin,LogoutData,profile}) => {
     <div className='navbar'>
     
     
-     <Link to='/'><div className='navbar-logo'><img src={logo} alt=''/><p>SHOPPER</p></div></Link>
+     <Link to='/e-commerce'><div className='navbar-logo'><img src={logo} alt=''/><p>SHOPPER</p></div></Link>
     <img   className='nav-dropdown' onClick={dropdown_toggle} src={dropdown_icon} style={{height:"50px"}}  alt=''/>
     <ul ref={menuRef} className='nav-menu'>
         <li onClick={()=>setMenu('shop')}><Link to='/e-commerce/'>Shop</Link> {menu==='shop'?<hr />:<></>}</li>

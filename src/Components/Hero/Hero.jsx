@@ -3,6 +3,7 @@ import './Hero.css';
 import hand_icon from '../Assets/hand_icon.png';
 import arrow_icon from '../Assets/arrow.png';
 import hero_icon from '../Assets/hero_image.png'
+
 const Hero = () => {
   return (
     <div className='hero'>
@@ -17,7 +18,7 @@ const Hero = () => {
      <p>for everyone</p>
      </div>
      <div className='hero-latest-btn'>
-        <div>Latest Collections</div>
+        <a href="#new-collection"><div>Latest Collections</div></a>
         <img src={arrow_icon} alt=''/>
      </div>
      
