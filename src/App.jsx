@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar';
-import {Routes , Route} from 'react-router-dom';
+import {Routes , Route, useParams} from 'react-router-dom';
 import Shop from './Pages/Shop';
 import Shopcategory from './Pages/Shopcategory';
 import Product from './Pages/Product';
@@ -19,9 +19,10 @@ import Profile from './Components/Profile/Profile';
 const App = () => {
 
   const [showLogin , setShowLogin] = useState(false);
-   const [profile , setprofile] = useState('');
+  const [profile , setprofile] = useState('');
   const  [LogoutData,setLogoutData] = useState(false)
-
+  
+  
   const data = async() =>{
     const API='https://661a2490125e9bb9f29b66df.mockapi.io/login'
     await axios.get(API).then((data)=>{
@@ -38,7 +39,7 @@ const App = () => {
       <Navbar setShowLogin={setShowLogin} LogoutData={LogoutData} profile={profile}/>
       
       <Routes>
-        <Route path='/E-COMMERCE' element={<Shop/>}/>
+        <Route path='/e-commerce/' element={<Shop/>}/>
         <Route path='/mens' element={<Shopcategory banner={men_banner} category="men"/>}/>
         <Route path='/womens' element={<Shopcategory banner={women_banner} category="women"/>}/>
         <Route path='/kid' element={<Shopcategory banner={kid_banner} category="kid"/>}/>
